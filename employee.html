@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">JobPortal</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="employee.html" class="active">Employee</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
+    </nav>
+
+    <main class="profile-container">
+        <h1>Your Profile</h1>
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="title">Title/Designation</label>
+                <input type="text" id="title" placeholder="e.g. Software Developer">
+            </div>
+            
+            <div class="form-group">
+                <label for="currentRole">Current Job Role</label>
+                <input type="text" id="currentRole" placeholder="e.g. Frontend Developer">
+            </div>
+            
+            <div class="form-group">
+                <label for="currentSalary">Current Salary Range ($)</label>
+                <input type="text" id="currentSalary" placeholder="e.g. 50000-70000">
+            </div>
+            
+            <div class="form-group">
+                <label for="expectedSalary">Expected Salary Range ($)</label>
+                <input type="text" id="expectedSalary" placeholder="e.g. 70000-90000">
+            </div>
+            
+            <div class="form-group">
+                <label for="skills">Skills (comma separated)</label>
+                <textarea id="skills" placeholder="e.g. JavaScript, React, Node.js"></textarea>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="publicProfile">
+                <label for="publicProfile">Make my profile public to companies</label>
+            </div>
+            
+            <button type="submit">Save Profile</button>
+        </form>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/employee.js"></script>
+</body>
+</html>

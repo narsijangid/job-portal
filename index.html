@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Find Your Dream Job</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">JobPortal</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="employee.html">Employee</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Find Your Perfect Job Match</h1>
+        <div class="search-container">
+            <input type="text" id="jobSearch" placeholder="Job title, keywords">
+            <input type="text" id="locationSearch" placeholder="Location">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-jobs">
+            <h2>Featured Jobs</h2>
+            <div id="jobResults" class="job-listings">
+                <!-- Jobs will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

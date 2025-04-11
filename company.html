@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">JobPortal</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="employee.html">Employee</a></li>
+            <li><a href="company.html" class="active">Company</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-container">
+        <div class="post-job">
+            <h1>Post a Job</h1>
+            <form id="jobPostForm">
+                <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" placeholder="e.g. Senior React Developer">
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea id="jobDescription" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="requiredSkills">Required Skills (comma separated)</label>
+                    <textarea id="requiredSkills" placeholder="e.g. JavaScript, React, Redux"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobRole">Job Role</label>
+                    <input type="text" id="jobRole" placeholder="e.g. Full-time, Remote">
+                </div>
+                
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+        
+        <div class="job-matches">
+            <h2>Potential Candidates</h2>
+            <button id="findMatches">Find Matching Employees</button>
+            <div id="matchResults" class="matches-list">
+                <!-- Matches will appear here -->
+            </div>
+        </div>
+        
+        <div class="posted-jobs">
+            <h2>Your Posted Jobs</h2>
+            <div id="postedJobs" class="job-listings">
+                <!-- Posted jobs will appear here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/company.js"></script>
+</body>
+</html>
